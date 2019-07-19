@@ -1,0 +1,108 @@
+/* Animation */
+
+@keyframes rolling {
+    
+    0% {
+        
+        transform:translateY(-0%)
+    }
+    
+    33%{
+        
+        transform:translateY(-25%)
+    }
+    
+    67%{
+        
+        transform:translateY(-50%)
+    }
+    
+    100%{
+        
+        transform:translateY(-75%)
+        
+    }
+
+}
+
+
+
+
+
+
+/* CSS RESET */
+
+body,h1,ul,p,pre{ 
+    margin: 0;
+    padding: 0;/*브라우저가 기본으로 제공하는 표시를 제거함!! 디자인에 중요요소! <담백한 초기 디자인>*/
+}
+
+body{
+    background-color: #111;
+    color: #999;
+    
+}
+
+ul{
+    list-style-type: none;
+}
+
+h1{
+    font-size: 100%;
+    font-weight: normal;
+}
+a{
+    color: inherit; /*분모의 색을 상속받음*/
+    text-decoration: none;
+}
+.portrait {
+    background-image: url(images/profile.jpg);
+    background-size: cover; /* 사지을 어색하지 않게 비율 16:9로 맞춤 */
+    background-position: center;
+    padding-top: 56.25%; /* 16:9 비율 */
+    
+}
+.profile{
+    padding: 7%;
+}
+
+.profile-header,
+.profile-section {
+    
+    padding-bottom: 7%;
+
+}
+
+.profile-header {
+
+}
+
+.name{
+    font-size: 40px;
+    line-height: 1.4;
+    font-style: italic;/* 이 태그 안의 라인높이를 정한다(폰트 사이즈에 따라 달라짐 여기서는 높이가 40이됨)*/
+    
+}
+.name-job{
+    display: inline-block;
+    background-color: navy;
+    vertical-align: top;
+    height: 1.4em; /* 폰트 크기에 맞춰어 같은 비율로 변경됨 */ 
+    overflow: hidden;
+    padding-right: 0.3em
+}
+
+.name-job-list{
+    
+    /* margin-top: -0em;  마찬가지로 폰크 크기에 비례해 변화 */
+    animation-name: rolling;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    
+}
+.name-name{
+    
+    font-size: 1.5em;
+    line-height: 1em;
+}
