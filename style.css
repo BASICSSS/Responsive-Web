@@ -4,7 +4,7 @@
     
     0% {
         
-        transform:translateY(-0%)
+        transform:translateY(0%)
     }
     
     33%{
@@ -32,14 +32,18 @@
 
 /* CSS RESET */
 
-body,h1,ul,p,pre{ 
+body,h1,ul,pre{ 
     margin: 0;
     padding: 0;/*브라우저가 기본으로 제공하는 표시를 제거함!! 디자인에 중요요소! <담백한 초기 디자인>*/
 }
 
 body{
-    background-color: #111;
-    color: #999;
+    background-color: #FFFFF3;
+    color: #BFB3A4;
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Acme', sans-serif;
+
     
 }
 
@@ -55,8 +59,13 @@ a{
     color: inherit; /*분모의 색을 상속받음*/
     text-decoration: none;
 }
+
+p{
+    margin-top: 0;
+    margin-bottom: 100px;
+}
 .portrait {
-    background-image: url(images/profile.jpg);
+    background-image: url(images/profile2.jpg);
     background-size: cover; /* 사지을 어색하지 않게 비율 16:9로 맞춤 */
     background-position: center;
     padding-top: 56.25%; /* 16:9 비율 */
@@ -79,30 +88,50 @@ a{
 
 .name{
     font-size: 40px;
-    line-height: 1.4;
+    line-height: 1.6;
     font-style: italic;/* 이 태그 안의 라인높이를 정한다(폰트 사이즈에 따라 달라짐 여기서는 높이가 40이됨)*/
     
 }
 .name-job{
     display: inline-block;
-    background-color: navy;
+    color: #A6785D;
     vertical-align: top;
-    height: 1.4em; /* 폰트 크기에 맞춰어 같은 비율로 변경됨 */ 
+    height: 1.6em; /* 폰트 크기에 맞춰어 같은 비율로 변경됨 */ 
     overflow: hidden;
-    padding-right: 0.3em
+    padding-right: 0.3em;
+    margin-bottom: 30px;
+    position: relative;
+    
+    
+}
+
+.name-job::after{ 
+    content: " ";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 10px 8px #FFFFF3;
+    margin-left: -1em;
+    margin-right: -1em;
+
+    
+    
 }
 
 .name-job-list{
     
     /* margin-top: -0em;  마찬가지로 폰크 크기에 비례해 변화 */
-    animation-name: rolling;
-    animation-duration: 2s;
+    animation-name: rolling; /* animation-name 으로 키프레임고 연결 */
+    animation-duration: 8s;
     animation-iteration-count: infinite;
     animation-direction: reverse;
     
 }
 .name-name{
     
+    color: #403E40;
     font-size: 1.5em;
     line-height: 1em;
 }
