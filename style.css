@@ -32,7 +32,7 @@
 
 /* CSS RESET */
 
-body,h1,ul,pre{ 
+body,h1,h2,ul,pre{ 
     margin: 0;
     padding: 0;/*브라우저가 기본으로 제공하는 표시를 제거함!! 디자인에 중요요소! <담백한 초기 디자인>*/
 }
@@ -51,7 +51,7 @@ ul{
     list-style-type: none;
 }
 
-h1{
+h1,h2{
     font-size: 100%;
     font-weight: normal;
 }
@@ -78,9 +78,18 @@ p{
 .profile-header,
 .profile-section {
     
-    padding-bottom: 7%;
+    padding-bottom: 13%;  
 
 }
+
+.profile-section h2 {
+    
+    
+    border-top: 3px solid;
+    color:#838383;
+    
+}
+
 
 .profile-header {
 
@@ -144,6 +153,15 @@ p{
     
     
 }
+
+.insta { background-position: left bottom; }
+.facebook { background-position: center bottom; }
+.kakaotalk { background-position: right bottom; }
+
+.icons a:hover { background-position-y: top; }
+
+
+
 .name-name{
     
     color: #403E40;
