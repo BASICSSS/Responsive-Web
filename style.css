@@ -78,7 +78,6 @@ p{
 .profile-header,
 .profile-section {
     
-    padding-bottom: 13%;  
 
 }
 
@@ -86,9 +85,8 @@ p{
     
     
     border-top: 3px solid;
-    color: dimgray;
+    color: #754C44;   
     margin-bottom: 20px;
-    
 }
 
 
@@ -171,12 +169,19 @@ p{
 }
 
 .timeline h3{
-    
-    padding-top: 30px;
-    font-size: 
+    color: #F17D49;
 }
 
 .timeline p{
     
-    color: #403E40;
+    color: dimgray;
+}
+.timeline li 
+{
+    padding-bottom: 20px; /*<p>태그(내용)의 밑에 패딩을 주는것보다 각 문단(li) 밑에 패딩을 주는것이 더 깔끔하고 안정적임??! */
+}
+
+.timeline li:last-child{
+    
+    padding-bottom: 0px;
 }
