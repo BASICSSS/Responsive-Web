@@ -190,3 +190,18 @@ p{
     
     padding-bottom: 0px;
 }
+
+.graph li{
+    background-color: forestgreen;
+    padding: 0.4em 0.7em;;
+    margin: 0.3em;
+    border-radius: 60px;
+    
+}
+
+.graph li::before {   /*praph li의 앞의(before) 가상요소 생성*/
+    
+    content: attr(data-score);
+    float: right; /*위치 지정*/
+}
+
