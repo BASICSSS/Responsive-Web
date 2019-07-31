@@ -73,6 +73,7 @@ p{
 }
 .profile{
     padding: 7%;
+    min-height: 5000px
 }
 
 .profile-header,
@@ -87,6 +88,11 @@ p{
     border-top: 3px solid;
     color: #754C44;   
     margin-bottom: 20px;
+    top: 0;
+    position: sticky;
+    background-color: #FFFFF3;
+    box-shadow: 0 0 30px 10px #FFFFF3;
+    
 }
 
 
@@ -98,6 +104,13 @@ p{
     font-size: 40px;
     line-height: 1.6;
     font-style: italic;/* 이 태그 안의 라인높이를 정한다(폰트 사이즈에 따라 달라짐 여기서는 높이가 40이됨)*/
+    top: 0;
+    position: sticky; /* 자바 스크립트로도 구현가능 하지만 조금 무겁고 복잡 / 하지만 호완성은 좋음 */
+    
+    background-color: #FFFFF3;
+    box-shadow: 0 0 10px #FFFFF3;
+
+    
     
 }
 .name-job{
@@ -166,6 +179,8 @@ p{
     color: #403E40;
     font-size: 1.5em;
     line-height: 1em;
+    position: relative;    
+    
 }
 
 .timeline p{
@@ -221,10 +236,15 @@ p{
 .graph li:first-child{ margin-top: 19px; }
 .graph li:last-child{ margin-bottom: 30px; }
 
+.info dd {
+    padding-bottom: 0.5em;
+}
+
 .info dt{
     
     color:darkgoldenrod;
     float:left;
     width: 3.5em;
-    padding: 0.4
+    padding-bottom: 0.5em;
+
 }
