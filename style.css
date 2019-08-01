@@ -32,7 +32,7 @@
 
 /* CSS RESET */
 
-body,h1,h2,ul,h3,pre{ 
+body,h1,h2,ul,h3,dl,dd,p{ 
     margin: 0;
     padding: 0;/*브라우저가 기본으로 제공하는 표시를 제거함!! 디자인에 중요요소! <담백한 초기 디자인>*/
 }
@@ -68,11 +68,11 @@ p{
     background-image: url(images/profile2.jpg);
     background-size: cover; /* 사지을 어색하지 않게 비율 16:9로 맞춤 */
     background-position: center;
-    padding-top: 56.25%; /* 16:9 비율 */
+    padding-top: 56.25%; /* 16:9 비율 (모바일기준)*/
     
 }
 .profile{
-    padding: 7%;
+    padding: 5%;
     min-height: 5000px
 }
 
@@ -91,7 +91,7 @@ p{
     top: 0;
     position: sticky;
     background-color: #FFFFF3;
-    box-shadow: 0 0 30px 10px #FFFFF3;
+    box-shadow: 0 0 10px 10px #FFFFF3;
     
 }
 
@@ -247,4 +247,23 @@ p{
     width: 3.5em;
     padding-bottom: 0.5em;
 
+}
+
+
+@media ( min-width:700px) {
+    
+    .portrait {
+
+        position: fixed;
+        width: 50vw;
+        height: 100vh;
+        padding: 0; /*padding-top 56%준 것을 없애줌 */
+        
+    }
+    
+    .profile {
+
+        margin-left: 50%;
+    }
+    
 }
