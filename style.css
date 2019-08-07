@@ -60,10 +60,11 @@ a{
     text-decoration: none; /*밑줄 없앰 */
 }
 
-p{
+/*p{
     margin-top: 0;
-    margin-bottom: 100px;
-}
+    margin-bottom: 60px;
+    
+}*/
 .portrait {
     background-image: url(images/profile2.jpg);
     background-size: cover; /* 사지을 어색하지 않게 비율 16:9로 맞춤 */
@@ -78,8 +79,8 @@ p{
 
 .profile-header,
 .profile-section {
+    padding-bottom: 14%;
     
-
 }
 
 .profile-section h2 {
@@ -255,6 +256,8 @@ p{
     .portrait {
 
         position: fixed;
+        left: 0;
+        top: 0;
         width: 50vw;
         height: 100vh;
         padding: 0; /*padding-top 56%준 것을 없애줌 */
@@ -266,4 +269,22 @@ p{
         margin-left: 50%;
     }
     
+    .timeline li {
+        
+        width: 50%;
+        padding: 0 10px;
+        box-sizing: border-box; /*box 사이즈 기중으로 크기 맞추어줌*/
+    }
+    
+    
+    .timeline li:nth-child(even)
+    {
+        margin-left: auto;
+        margin-bottom: -100px;
+        margin-top: -100px;
+        
+    }
+  
+    
+
 }
