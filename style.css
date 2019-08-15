@@ -65,6 +65,10 @@ p{
     margin-bottom: 100px;
     
 }
+
+header .left{ float: left;}
+header > ul { float:right;} /* 자식 선택자 > 하지만 그 태ㅡ의 바로 아랬단 요소일 경우 마나능!!*/
+
 .portrait {
     background-image: url(images/profile2.jpg);
     background-size: cover; /* 사지을 어색하지 않게 비율 16:9로 맞춤 */
