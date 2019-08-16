@@ -1,26 +1,25 @@
 /* Animation */
 
 @keyframes rolling {
-    
+
     0% {
-        
-        transform:translateY(0%)
+
+        transform: translateY(0%)
     }
-    
-    33%{
-        
-        transform:translateY(-25%)
+
+    33% {
+
+        transform: translateY(-25%)
     }
-    
-    67%{
-        
-        transform:translateY(-50%)
+
+    67% {
+
+        transform: translateY(-50%)
     }
-    
-    100%{
-        
-        transform:translateY(-75%)
-        
+
+    100% {
+
+        transform: translateY(-75%)
     }
 
 }
@@ -32,51 +31,92 @@
 
 /* CSS RESET */
 
-body,h1,h2,ul,h3,dl,dd,p{ 
+body,
+h1,
+h2,
+ul,
+h3,
+dl,
+dd,
+p {
     margin: 0;
-    padding: 0;/*브라우저가 기본으로 제공하는 표시를 제거함!! 디자인에 중요요소! <담백한 초기 디자인>*/
+    padding: 0;
+    /*브라우저가 기본으로 제공하는 표시를 제거함!! 디자인에 중요요소! <담백한 초기 디자인>*/
 }
 
-body{
+body {
     background-color: #FFFFF3;
     color: #BFB3A4;
     font-family: 'Indie Flower', cursive;
     font-family: 'Shadows Into Light', cursive;
     font-family: 'Acme', sans-serif;
 
-    
+
 }
 
-ul{
+ul {
     list-style-type: none;
 }
 
-h1,h2,h3{
+h1,
+h2,
+h3 {
     font-size: 100%;
     font-weight: normal;
 }
-a{
-    color: inherit; /*분모의 색을 상속받음*/
-    text-decoration: none; /*밑줄 없앰 */
+
+a {
+    color: inherit;
+    /*분모의 색을 상속받음*/
+    text-decoration: none;
+    /*밑줄 없앰 */
 }
 
-p{
+p {
     margin-top: 0;
     margin-bottom: 100px;
-    
+
 }
 
-header .left{ float: left;}
-header > ul { float:right;} /* 자식 선택자 > 하지만 그 태ㅡ의 바로 아랬단 요소일 경우 마나능!!*/
+header .close,
+header .all,
+header h2,
+header .left > div > div{
+    display: none;
+}
+
+header .left {
+    float: left;
+}
+
+header > ul {
+    float: right;
+}
+
+/* 자식 선택자 > 하지만 그 태ㅡ의 바로 아랬단 요소일 경우 마나능!!*/
+header a {
+    color: inherit;
+}
+
+header nav a {
+    font-size: 18px;
+    font-weight: bold;
+}
+header .left { margin-left: 52%;}
+header .left >div > div {float: left;}
+header .left >div nav li {float: left;} /*메뉸에서 좌측을로 배치한다.*/
 
 .portrait {
     background-image: url(images/profile2.jpg);
-    background-size: cover; /* 사지을 어색하지 않게 비율 16:9로 맞춤 */
+    background-size: cover;
+    /* 사지을 어색하지 않게 비율 16:9로 맞춤 */
     background-position: center;
-    padding-top: 56.25%; /* 16:9 비율 (모바일기준)*/
-    
+    padding-top: 56.25%;
+    /* 16:9 비율 (모바일기준)*/
+
 }
-.profile{
+
+.profile {
     padding: 5%;
     min-height: 5000px
 }
@@ -84,54 +124,56 @@ header > ul { float:right;} /* 자식 선택자 > 하지만 그 태ㅡ의 바로
 .profile-header,
 .profile-section {
     padding-bottom: 14%;
-    
+
 }
 
 .profile-section h2 {
-    
-    
+
+
     border-top: 3px solid;
-    color: #754C44;   
+    color: #754C44;
     margin-bottom: 20px;
     top: 0;
     position: sticky;
     background-color: #FFFFF3;
     box-shadow: 0 0 10px 10px #FFFFF3;
-    
-}
-
-
-.profile-header {
 
 }
 
-.name{
+
+.profile-header {}
+
+.name {
     font-size: 40px;
     line-height: 1.6;
-    font-style: italic;/* 이 태그 안의 라인높이를 정한다(폰트 사이즈에 따라 달라짐 여기서는 높이가 40이됨)*/
+    font-style: italic;
+    /* 이 태그 안의 라인높이를 정한다(폰트 사이즈에 따라 달라짐 여기서는 높이가 40이됨)*/
     top: 0;
-    position: sticky; /* 자바 스크립트로도 구현가능 하지만 조금 무겁고 복잡 / 하지만 호완성은 좋음 */
-    
+    position: sticky;
+    /* 자바 스크립트로도 구현가능 하지만 조금 무겁고 복잡 / 하지만 호완성은 좋음 */
+
     background-color: #FFFFF3;
     box-shadow: 0 0 10px #FFFFF3;
 
-    
-    
+
+
 }
-.name-job{
+
+.name-job {
     display: inline-block;
     color: #A6785D;
     vertical-align: top;
-    height: 1.6em; /* 폰트 크기에 맞춰어 같은 비율로 변경됨 */ 
+    height: 1.6em;
+    /* 폰트 크기에 맞춰어 같은 비율로 변경됨 */
     overflow: hidden;
     padding-right: 0.3em;
     margin-bottom: 30px;
     position: relative;
-    
-    
+
+
 }
 
-.name-job::after{ 
+.name-job::after {
     content: " ";
     position: absolute;
     left: 0;
@@ -142,121 +184,149 @@ header > ul { float:right;} /* 자식 선택자 > 하지만 그 태ㅡ의 바로
     margin-left: -1em;
     margin-right: -1em;
 
-    
-    
+
+
 }
 
-.name-job-list{
-    
+.name-job-list {
+
     /* margin-top: -0em;  마찬가지로 폰크 크기에 비례해 변화 */
-    animation-name: rolling; /* animation-name 으로 키프레임고 연결 */
+    animation-name: rolling;
+    /* animation-name 으로 키프레임고 연결 */
     animation-duration: 8s;
     animation-iteration-count: infinite;
     animation-direction: reverse;
-    
-}
-
-.icons {
-
 
 }
+
+.icons {}
 
 .icons a {
     background-image: url(images/icons.png);
     width: 30px;
-    height: 30px;  
+    height: 30px;
     display: inline-block;
     text-indent: -9999px;
-    
-    
+
+
 }
 
-.insta { background-position: left bottom; }
-.facebook { background-position: center bottom; }
-.kakaotalk { background-position: right bottom; }
+.insta {
+    background-position: left bottom;
+}
 
-.icons a:hover { background-position-y: top; }
+.facebook {
+    background-position: center bottom;
+}
+
+.kakaotalk {
+    background-position: right bottom;
+}
+
+.icons a:hover {
+    background-position-y: top;
+}
 
 
 
-.name-name{
-    
+.name-name {
+
     color: #403E40;
     font-size: 1.5em;
     line-height: 1em;
-    position: relative;    
-    
+    position: relative;
+
 }
 
-.timeline p{
-    
+.timeline p {
+
     color: dimgray;
 }
-.timeline li 
-{
-    padding-bottom: 20px; /*<p>태그(내용)의 밑에 패딩을 주는것보다 각 문단(li) 밑에 패딩을 주는것이 더 깔끔하고 안정적임??! */
+
+.timeline li {
+    padding-bottom: 20px;
+    /*<p>태그(내용)의 밑에 패딩을 주는것보다 각 문단(li) 밑에 패딩을 주는것이 더 깔끔하고 안정적임??! */
 }
 
-.timeline li h3{
+.timeline li h3 {
     color: #F17D49;
-    float:left;
+    float: left;
     margin-right: 0.5em;
     letter-spacing: 0.08em;
     padding-top: 0.15em;
     border-top: 2.5px solid #F17D49;
 }
 
-.timeline li:last-child{
-    
+.timeline li:last-child {
+
     padding-bottom: 0px;
 }
 
-.graph li{
-    
-    background: rgb(232,82,60);
-    background: linear-gradient(90deg, rgba(232,82,60,1) 3%, rgba(201,151,88,1) 55%, rgba(168,109,33,1) 100%);
-    
+.graph li {
+
+    background: rgb(232, 82, 60);
+    background: linear-gradient(90deg, rgba(232, 82, 60, 1) 3%, rgba(201, 151, 88, 1) 55%, rgba(168, 109, 33, 1) 100%);
+
     /* background: rgb(238,174,202);
     background: linear-gradient(101deg, rgba(238,174,202,1) 0%, rgba(156,134,179,1) 100%); */
     color: white;
-    padding: 0.5em 0.7em;;
+    padding: 0.5em 0.7em;
+    ;
     margin: 0.4em 0em;
     border-radius: 60px;
     box-sizing: border-box;
-    
+
 }
 
-.graph li[data-score='100%'] { width: 100%; }
-.graph li[data-score="80%"] { width: 80%;}
-.graph li[data-score='70%'] { width: 70%; }
-.graph li[data-score='50%'] { width: 50%; }
-    
+.graph li[data-score='100%'] {
+    width: 100%;
+}
 
-.graph li::before {   /*praph li의 앞의(before) 가상요소 생성*/
-    
+.graph li[data-score="80%"] {
+    width: 80%;
+}
+
+.graph li[data-score='70%'] {
+    width: 70%;
+}
+
+.graph li[data-score='50%'] {
+    width: 50%;
+}
+
+
+.graph li::before {
+    /*praph li의 앞의(before) 가상요소 생성*/
+
     content: attr(data-score);
-    float: right; /*위치 지정*/
+    float: right;
+    /*위치 지정*/
 }
 
-.graph li:first-child{ margin-top: 19px; }
-.graph li:last-child{ margin-bottom: 30px; }
+.graph li:first-child {
+    margin-top: 19px;
+}
+
+.graph li:last-child {
+    margin-bottom: 30px;
+}
 
 .info dd {
     padding-bottom: 0.5em;
 }
 
-.info dt{
-    
-    color:darkgoldenrod;
-    float:left;
+.info dt {
+
+    color: darkgoldenrod;
+    float: left;
     width: 3.5em;
     padding-bottom: 0.5em;
 
 }
 
 
-@media ( min-width:700px) {
-    
+@media (min-width:700px) {
+
     .portrait {
 
         position: fixed;
@@ -264,36 +334,37 @@ header > ul { float:right;} /* 자식 선택자 > 하지만 그 태ㅡ의 바로
         top: 0;
         width: 50vw;
         height: 100vh;
-        padding: 0; /*padding-top 56%준 것을 없애줌 */
-        
+        padding: 0;
+        /*padding-top 56%준 것을 없애줌 */
+
     }
-    
+
     .profile {
 
         margin-left: 50%;
     }
-    
-    .name{
+
+    .name {
 
         font-size: 3.3vw;
     }
-    
+
     .timeline li {
-        
+
         width: 50%;
         padding: 0 10px;
-        box-sizing: border-box; /*box 사이즈 기중으로 크기 맞추어줌*/
+        box-sizing: border-box;
+        /*box 사이즈 기중으로 크기 맞추어줌*/
     }
-    
-    
-    .timeline li:nth-child(even)
-    {
+
+
+    .timeline li:nth-child(even) {
         margin-left: auto;
         margin-bottom: -100px;
         margin-top: -100px;
-        
+
     }
-  
-    
+
+
 
 }
