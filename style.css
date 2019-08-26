@@ -89,6 +89,9 @@ header .left {
     float: left;
 }
 
+header > ul{
+    padding: 31px 90px 0 0;
+}
 header > ul a {
 
     float: right;
@@ -107,11 +110,14 @@ header > ul a:hover
     background: url(images/setting.png) -62px -10px;
 }
 /* 자식 선택자 > 하지만 그 태ㅡ의 바로 아랬단 요소일 경우 만나능!!*/
+
 header a {
     color: inherit;
 }
 
 header nav a {
+    display: block;
+    height: 40px;
     font-size: 18px;
     font-weight: bold;
 }
