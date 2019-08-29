@@ -89,15 +89,13 @@ header .left {
     float: left;
 }
 
-header > ul{
-    padding: 31px 90px 0 0;
-}
 header > ul a {
 
     float: right;
     width: 32px;
     height: 32px;
     color: transparent;
+    display: none;
     /*글자색?을 투명으로 바꾸어서 안보이게해줌*/
 
 }
@@ -358,8 +356,60 @@ header .left > div nav li {
 
 }
 
+@media (min-width:1001px ) {
+    
+    
+    header > ul{ padding: 31px 90px 0 0; }
+    header > ul a {
+        display:inherit;
+    }
+    .portrait {
 
-@media (min-width:700px) {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 50vw;
+        height: 100vh;
+        padding: 0;
+        /*padding-top 56%준 것을 없애줌 */
+
+    }
+
+    .profile {
+
+        margin-left: 50%;
+    }
+
+    .name {
+
+        font-size: 3.3vw;
+    }
+
+    .timeline li {
+
+        width: 50%;
+        padding: 0 10px;
+        box-sizing: border-box;
+        /*box 사이즈 기중으로 크기 맞추어줌*/
+    }
+
+
+    .timeline li:nth-child(even) {
+        margin-left: auto;
+        margin-bottom: -100px;
+        margin-top: -100px;
+
+    }
+
+}
+
+@media (min-width:701px) and (max-width:1000px ) {
+    
+    
+    header > ul{ padding: 31px 90px 0 0; }
+    header .left > div {display: none; float: none;}
+
+
 
     .portrait {
 
@@ -402,3 +452,4 @@ header .left > div nav li {
 
 
 }
+
