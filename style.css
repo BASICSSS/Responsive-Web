@@ -81,10 +81,14 @@ p {
 header .close,
 header .all,
 header h2,
-header .left > div > div {
+header .left > div > div{
     display: none;
 }
+header .left > div{
 
+display: none;
+
+}
 header .left {
     float: left;
 }
@@ -119,13 +123,15 @@ header nav a {
     height: 40px;
     font-size: 18px;
     font-weight: bold;
+    padding-top: 30px; /* 헤더 레프트 전체에 left 줘서 정렬 시킨것이 아닌 메뉴 자체만 패딩줌*/
+   
 }
 
-header nav a:before { content: "";position:absolute; left:0; bottom:0; width: 0; height: 2px; background: #000; transition:0.3s}
+header nav a:before { content: "";position:absolute; left:0; bottom:13px; width: 0; height: 2px; background: #000; transition:0.3s}
 header nav a:hover:before { width: 100%}
 
 header .left {
-    padding: 30px 0 0 55.3%; 
+    padding: 0px 0 0 55.3%; 
 }
 
 header .left > div > div {
@@ -360,9 +366,14 @@ header .left > div nav li {
     
     
     header > ul{ padding: 31px 90px 0 0; }
-    header > ul a {
-        display:inherit;
+    header .left > div  {
+        display: block;
     }
+    header >ul a{
+
+    display: inherit;
+    }
+    
     .portrait {
 
         position: fixed;
@@ -408,7 +419,9 @@ header .left > div nav li {
     
     header > ul{ padding: 31px 90px 0 0; }
     header .left > div {display: none; float: none;}
-
+    header .all { display:block;}
+    
+    header .all::after { float: right;}
 
 
     .portrait {
