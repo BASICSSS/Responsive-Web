@@ -144,7 +144,7 @@ header .left > div > div {
 }
 
 header .left > div nav li {
-    float: left;       /* 윗줄 floadt:left 한것과 동일한 효과를 추가로(+메뉴를 왼쪽 정렬하는것) 내고 있어서 윗줄을 없에도 됨 */
+    float: left;       /* 윗줄 float:left 한것과 동일한 효과를 추가로(+메뉴를 왼쪽 정렬하는것) 내고 있어서 윗줄을 없에도 됨 */
     padding: 0 30px 0 0;
 }
 
@@ -426,8 +426,9 @@ header .left > div nav li {
     header .left > div {display: none; float: none;}
     header .all { display:block; float: right; } /*직접 줄그어 만든 메뉴 */
     
-    header .nav.on {display: block; position:absolute; right:0; top:0; width:21%; height: 100%; z-index: 1; background-color: rgba( 0, 0, 0, 0.4 ) }
-    
+    header .nav.on {display: block; position:absolute; right:0; top:0; width:21%; height: 100%; z-index: 1; background-color: rgba( 105, 105, 105, 0.6 ); padding: 10px 10px 10px 10px;}
+    header .nav.on nav a { color: #DBBC56; }
+    header .nav.on nav li { float: none;}
     
     
     header .close,
