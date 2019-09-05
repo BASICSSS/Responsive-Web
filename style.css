@@ -425,7 +425,14 @@ header .left > div nav li {
     header > ul{ padding: 30px 90px 0 0; } /*설정버튼이데 이걸 메뉴로 바꿀까*/
     header .left > div {display: none; float: none;}
     header .all { display:block; float: right; } /*직접 줄그어 만든 메뉴 */
-
+    
+    header .nav.on {display: block; position: absolute; right:0; top:0; width:30%; height: 100%; background: #111; }
+    
+    
+    
+    header .close,
+    header h2,
+    header .left > div > div{ display: block; }
 
 
     .portrait {
