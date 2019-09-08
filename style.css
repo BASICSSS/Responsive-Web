@@ -39,6 +39,7 @@ h3,
 dl,
 dd,
 p {
+    
     margin: 0;
     padding: 0;
     /*브라우저가 기본으로 제공하는 표시를 제거함!! 디자인에 중요요소! <담백한 초기 디자인>*/
@@ -426,9 +427,11 @@ header .left > div nav li {
     header .left > div {display: none; float: none;}
     header .all { display:block; float: right; } /*직접 줄그어 만든 메뉴 */
     
-    header .nav.on {display: block; position:absolute; right:0; top:0; width:21%; height: 100%; z-index: 1; background-color: rgba( 105, 105, 105, 0.6 ); padding: 10px 10px 10px 10px;}
-    header .nav.on nav a { color: #DBBC56; }
-    header .nav.on nav li { float: none;}
+    header .nav.on {display: block; position:absolute; right:0; top:0; width:21%; height: 100%; z-index: 1; background-color: rgba( 105, 105, 105, 0.7 ); padding: 10px 10px 10px 10px; box-sizing: border-box;} 
+    header .nav.on nav a { color: #DBBC56; margin: 0; height: 50px; line-height: 50px;}
+    header .nav.on nav {border-top: 1.5px solid #754C44; padding: 10px 0 0 ; width: 85%; margin:  0 0 0 11px;}
+    header .nav.on nav li { float: none; }
+    header h2{margin: 0 0 45px 0; color: transparent;}
     
     
     header .close,
