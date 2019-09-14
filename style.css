@@ -120,7 +120,7 @@ header a {
     color: inherit;
 }
 
-header .all { width: 24px; height: 24px; background:url(images/icons2.png) -94px -6px; margin: 31px 30px 0 0; color: transparent;}
+header .all { width: 24px; height: 24px; background:url(images/icons2.png) -94px -6px; margin: 21px 20px 0 0; color: transparent;}
 
 
 header nav a {
@@ -426,13 +426,19 @@ header .left > div nav li {
     header > ul{ padding: 30px 90px 0 0; } /*설정버튼이데 이걸 메뉴로 바꿀까*/
     header .left > div {display: none; float: none;}
     header .all { display:block; float: right; } /*직접 줄그어 만든 메뉴 */
-    
     header .nav.on {display: block; position:absolute; right:0; top:0; width:21%; height: 100%; z-index: 1; background-color: rgba( 105, 105, 105, 0.7 ); padding: 10px 10px 10px 10px; box-sizing: border-box;} 
     header .nav.on nav a { color: #DBBC56; margin: 0; height: 50px; line-height: 50px;}
-    header .nav.on nav {border-top: 1.5px solid #754C44; padding: 10px 0 0 ; width: 85%; margin:  0 0 0 11px;}
+    header .nav.on nav a::before {display: none;}
+    header .nav.on nav {border-top: 2px solid #754C44; padding: 10px 0 0 ; width: 85%; margin:  0 0 11px 11px;}
     header .nav.on nav li { float: none; }
     header h2{margin: 0 0 45px 0; color: transparent;}
-    
+    header .nav.on div{float: none; display: flex;}
+    header .nav.on div a{height: 38px; line-height: 38px; font-size: 16px;text-align: center; flex:1; border-left: 1.3px solid #696969;}
+    header .nav.on div a:first-child{border-left: none;}
+    header .nav.on .close { position: absolute; right:20px; top:30px; width:24px; height: 24px; color: transparent;}
+    header .nav.on .close::before { content: ""; position:absolute; top:0; left: 45%; height: 100%; width:2px; background: #696969; transform: rotate(45deg);}
+    header .nav.on .close::after { content: ""; position:absolute; top:0; right: 45%; height: 100%; width:2px; background: #696969; transform: rotate(-45deg);}
+    header .nav.on .all {display: none;}
     
     header .close,
     header h2,
