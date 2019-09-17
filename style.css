@@ -426,6 +426,7 @@ header .left > div nav li {
     header > ul{ padding: 30px 90px 0 0; } /*설정버튼이데 이걸 메뉴로 바꿀까*/
     header .left > div {display: none; float: none;}
     header .all { display:block; float: right; } /*직접 줄그어 만든 메뉴 */
+    header .nav { display: none;}
     header .nav.on {display: block; position:absolute; right:0; top:0; width:21%; height: 100%; z-index: 1; background-color: rgba( 105, 105, 105, 0.7 ); padding: 10px 10px 10px 10px; box-sizing: border-box;} 
     header .nav.on nav a { color: #DBBC56; margin: 0; height: 50px; line-height: 50px;}
     header .nav.on nav a::before {display: none;}
