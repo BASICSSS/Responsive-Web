@@ -142,5 +142,26 @@
 
     </div>
 
-</body></html>
+</body>
+    
+<script>
+    
+    $(document).ready(function() { 
+    $(".all").on("click", function() {
+        
+        $(".nav").addClass("on");
+        $(".all").fadeOut(600);
+        
+    });
+    
+    $(".close").on("click", function() {
+
+        $(".all").fadeIn(600);
+        $(".nav").removeClass("on");
+        
+    });
+});
+</script>
+
+</html>
     
