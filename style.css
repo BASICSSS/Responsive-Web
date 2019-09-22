@@ -81,8 +81,7 @@ p {
 
 header .close,
 header .all,
-header h2,
-header .left > div > div{
+header h2 {
     display: none;
 }
 
@@ -130,10 +129,8 @@ header nav a:hover:before { width: 100%}
 
 header .left {
     padding: 0 0 0 55.3%; 
-}
-
-header .left > div > div {
-    float: left;
+    position: sticky;
+    top: -1em;
 }
 
 
@@ -152,7 +149,7 @@ header .left > div > div {
 
 .profile {
     padding: 5%;
-    min-height: 5000px
+    min-height: 2000px;
 }
 
 .profile-header,
@@ -369,6 +366,10 @@ header .left > div > div {
     header .left > div  {
         display: block;
     }
+    header .left > div > div{
+    display: none;
+    }
+
     header >ul a{
 
     display: inherit;
@@ -418,12 +419,12 @@ header .left > div > div {
     
     
     header > ul{ padding: 30px 90px 0 0; } /*설정버튼이데 이걸 메뉴로 바꿀까*/
-    header .all { display:block; float: right; } /*직접 줄그어 만든 메뉴 */
-    header .nav { position:absolute; right:-22%; top:0; width:21%; height: 100%; z-index: 1; background-color: rgba( 105, 105, 105, 0.7 ); transition: right 1s 0s; padding: 10px 10px 10px 10px; box-sizing: border-box;}
+    header .all { display:block; float: right;} /*직접 줄그어 만든 메뉴 */
+    header .nav { position:absolute; right:-22%; top:0; width:21%; height: 100%; z-index: 1; background-color: rgba( 105, 105, 105, 0.7 ); transition: right 1s 0s; padding: 10px 10px 10px 10px; box-sizing: border-box; }
     header .nav.on {right: 0;} 
     header .nav nav a { color: #DBBC56; margin: 0; height: 50px; line-height: 50px;}
     header .nav nav a::before {display: none;}
-    header .nav nav {border-top: 2px solid #754C44; padding: 10px 0 0 ; width: 85%; margin:  0 0 11px 11px;}
+    header .nav nav {border-top: 2px solid #754C44; padding: 10px 0 0 ; width: 85%; margin:  0 0 11px 1.4vw;}
     header .nav nav li { float: none; }
     header h2{margin: 0 0 45px 0; color: transparent;}
     header .nav div{float: none; display: flex;}
@@ -434,8 +435,7 @@ header .left > div > div {
     header .nav.on .all {display: none;}
     
     header .close,
-    header h2,
-    header .left > div > div{ display: block; }
+    header h2 { display: block; }
 
 
     .portrait {
@@ -485,24 +485,23 @@ header .left > div > div {
  
     
     
-    header .all { display:block; float: right; } /*직접 줄그어 만든 메뉴 */
-    header .nav { position:absolute; right:-22%; top:0; width:21%; height: 100%; z-index: 1; background-color: rgba( 105, 105, 105, 0.7 ); transition: right 1s 0s; padding: 10px 10px 10px 10px; box-sizing: border-box;}
+    header .all { display:block; float: right; transform: scale(0.85);} /*직접 줄그어 만든 메뉴 */
+    header .nav { position:absolute; right:-22%; top:0; width:20%; height: 100%; z-index: 1; background-color: rgba( 105, 105, 105, 0.7 ); transition: right 1s 0s; padding: 10px 10px 10px 10px; box-sizing: border-box;}
     header .nav.on {right: 0;} 
-    header .nav nav a { color: #DBBC56; margin: 0; height: 50px; line-height: 50px;}
+    header .nav nav a { color: #DBBC56; margin: 0; height: 50px; line-height: 50px; font-size: 2.9vw}
     header .nav nav a::before {display: none;}
-    header .nav nav {border-top: 2px solid #754C44; padding: 10px 0 0 ; width: 85%; margin:  0 0 11px 11px;}
+    header .nav nav {border-top: 2px solid #754C44; padding: 10px 0 0 ; width: 85%; margin:  0 0 11px 1vw;}
     header .nav nav li { float: none; }
     header h2{margin: 0 0 45px 0; color: transparent;}
     header .nav div{float: none; display: flex;}
-    header .nav div a{height: 38px; line-height: 38px; font-size: 16px;text-align: center; flex:1;}
-    header .nav .close { position: absolute; right:20px; top:30px; width:24px; height: 24px; color: transparent;}
+    header .nav div a{height: 38px; line-height: 38px; font-size: 2.3vw;text-align: center; flex:1;}
+    header .nav .close { position: absolute; right:20px; top:30px; width:24px; height: 24px; color: transparent; transform: scale(0.8);}
     header .nav .close::before { content: ""; position:absolute; top:0; left: 45%; height: 100%; width:2px; background: #696969; transform: rotate(45deg);}
     header .nav .close::after { content: ""; position:absolute; top:0; right: 45%; height: 100%; width:2px; background: #696969; transform: rotate(-45deg);}
     header .nav.on .all {display: none;}
     
     header .close,
-    header h2,
-    header .left > div > div{ display: block; }
+    header h2 { display: block; }
 
 
 
