@@ -129,8 +129,6 @@ header nav a:hover:before { width: 100%}
 
 header .left {
     padding: 0 0 0 55.3%; 
-    position: sticky;
-    top: -1em;
 }
 
 
