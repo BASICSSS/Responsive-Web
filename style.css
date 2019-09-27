@@ -95,6 +95,7 @@ header > ul a {
     /*글자색?을 투명으로 바꾸어서 안보이게해줌*/
 
 }
+.fixed{  position: fixed; right: 0; }
 
 header > ul .Setting {
     background: url(images/icons2.png) -6px -6px; margin: 0 0 0 13px;; 
@@ -121,6 +122,7 @@ header nav a {
     font-size: 1.2em;
     font-weight: bold;
     margin-top: 30px; /* 헤더 레프트 전체에 left 줘서 정렬 시킨것이 아닌 메뉴 자체만 패딩줌*/
+    
    
 }
 
@@ -422,10 +424,10 @@ header .left {
     header .nav.on {right: 0;} 
     header .nav nav a { color: #DBBC56; margin: 0; height: 50px; line-height: 50px;}
     header .nav nav a::before {display: none;}
-    header .nav nav {border-top: 2px solid #754C44; padding: 10px 0 0 ; width: 85%; margin:  0 0 11px 1.4vw;}
+    header .nav nav {border-top: 2px solid #754C44; padding: 10px 0 0 ; width: 85%; margin:  0 0 11px 1.4vw; } 
     header .nav nav li { float: none; }
     header h2{margin: 0 0 45px 0; color: transparent;}
-    header .nav div{float: none; display: flex;}
+    header .nav div{float: none; display: flex; }
     header .nav div a{height: 38px; line-height: 38px; font-size: 16px;text-align: center; flex:1;}
     header .nav .close { position: absolute; right:20px; top:30px; width:24px; height: 24px; color: transparent;}
     header .nav .close::before { content: ""; position:absolute; top:0; left: 45%; height: 100%; width:2px; background: #696969; transform: rotate(45deg);}

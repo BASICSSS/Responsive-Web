@@ -160,7 +160,20 @@
         $(".nav").removeClass("on");
         
     });
+        
+    
+    var menu =$(".all").offset()
+        $(window).scroll(function() { 
+        
+            if($(document).scrollTop() > menu.top) {
+                    
+                $(".all").addClass("fixed");}
+            else {
+                
+                $(".all").removeClass("fixed");}
+            });
 });
+    
 </script>
 
 </html>
