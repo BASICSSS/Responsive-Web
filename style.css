@@ -419,9 +419,9 @@ header .left {
     
     
     header > ul{ padding: 30px 90px 0 0; } /*설정버튼이데 이걸 메뉴로 바꿀까*/
-    header .all { display:block; float: right;} /*직접 줄그어 만든 메뉴 */
-    header .nav { position:absolute; right:-22%; top:0; width:21%; height: 100%; z-index: 1; background-color: rgba( 105, 105, 105, 0.7 ); transition: right 1s 0s; padding: 10px 10px 10px 10px; box-sizing: border-box; }
-    header .nav.on {right: 0;} 
+    header .all { display:block; float: right; z-index: 2;} /*직접 줄그어 만든 메뉴 */
+    header .nav { position:absolute; right:-22%; top:0; width:21%; height: 220%; z-index: 3; background-color: rgba( 105, 105, 105, 0.7 ); transition: right 1s 0s; padding: 10px 10px 10px 10px; box-sizing: border-box; }
+    header .nav.on {right: 0; position: fixed;} 
     header .nav nav a { color: #DBBC56; margin: 0; height: 50px; line-height: 50px;}
     header .nav nav a::before {display: none;}
     header .nav nav {border-top: 2px solid #754C44; padding: 10px 0 0 ; width: 85%; margin:  0 0 11px 1.4vw; } 
@@ -485,9 +485,9 @@ header .left {
  
     
     
-    header .all { display:block; float: right; transform: scale(0.85);} /*직접 줄그어 만든 메뉴 */
-    header .nav { position:absolute; right:-22%; top:0; width:20%; height: 100%; z-index: 1; background-color: rgba( 105, 105, 105, 0.7 ); transition: right 1s 0s; padding: 10px 10px 10px 10px; box-sizing: border-box;}
-    header .nav.on {right: 0;} 
+    header .all { display:block; float: right; transform: scale(0.85); z-index: 2;} /*직접 줄그어 만든 메뉴 */
+    header .nav { position:absolute; right:-22%; top:0; width:20%; height: 220%; z-index: 3; background-color: rgba( 105, 105, 105, 0.7 ); transition: right 1s 0s; padding: 10px 10px 10px 10px; box-sizing: border-box;}
+    header .nav.on {right: 0; position: fixed;} 
     header .nav nav a { color: #DBBC56; margin: 0; height: 50px; line-height: 50px; font-size: 2.9vw}
     header .nav nav a::before {display: none;}
     header .nav nav {border-top: 2px solid #754C44; padding: 10px 0 0 ; width: 85%; margin:  0 0 11px 1vw;}
