@@ -25,7 +25,7 @@
                 <h2>Manu</h2>
                 <nav>
                     <ul>
-                        <li><a href="#a">Skill</a>
+                        <li><a href="#firstsec" class="first">Skill</a>
                         <li><a href="#a">Ablity</a>
                         <li><a href="#a">Contact</a>
 
@@ -76,7 +76,7 @@
 
         </div>
         <div class="profile-section">
-            <h2> Skill </h2>
+            <h2 id="firstsec"> Skill </h2>
             <ul class=timeline>
                 <li>
                     <h3>develop</h3>
@@ -112,7 +112,7 @@
             </ul>
         </div>
         <div class="profile-section">
-            <h2> Ability</h2>
+            <h2 id="secondsec"> Ability</h2>
             <ul class="graph">
                 <li data-score="100%">
                     <h3>VideoMaking</h3>
@@ -172,6 +172,12 @@
                 
                 $(".all").removeClass("fixed");}
             });
+        $(".first").click(function(event){
+             
+           /*event.preventDefault();*/
+           $("html,body").animate({scrollTop:$(this.hash).offset().top},400);
+        });
+    
 });
     
 </script>
