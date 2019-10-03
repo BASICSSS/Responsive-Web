@@ -25,9 +25,9 @@
                 <h2>Manu</h2>
                 <nav>
                     <ul>
-                        <li><a href="#firstsec" class="first">Skill</a>
-                        <li><a href="#a">Ablity</a>
-                        <li><a href="#a">Contact</a>
+                        <li><a href="#firstsec" class="firstm">Skill</a>
+                        <li><a href="#secondsec" class="secondm">Ablity</a>
+                        <li><a href="#thirdsec" class="thirdm">Contact</a>
 
                         </li>
                     </ul>
@@ -130,7 +130,7 @@
 
         </div>
         <div class="profile-section">
-            <h2> contact </h2>
+            <h2 id="thirdsec"> contact </h2>
             <dl class="info">
                 <dt>Email</dt>
                 <dd>river449@gmail.com</dd>
@@ -172,7 +172,7 @@
                 
                 $(".all").removeClass("fixed");}
             });
-        $(".first").click(function(event){
+        $(".firstm, .secondm, .thirdm").click(function(event){
              
            /*event.preventDefault();*/
            $("html,body").animate({scrollTop:$(this.hash).offset().top},400);
