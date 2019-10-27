@@ -137,7 +137,7 @@ header .left {
 /*메뉸에서 좌측을로 배치한다.*/
 /*header .left nav a { display: inline; height: 50px; line-height: 50px;}*/
 
-.portrait {
+.portrait{
     background-image: url(images/profile2.jpg);
     background-size: cover;
     /* 사지을 어색하지 않게 비율 16:9로 맞춤 */
@@ -146,6 +146,7 @@ header .left {
     /* 16:9 비율 (모바일기준)*/
 
 }
+
 
 .profile {
     padding: 5%;
