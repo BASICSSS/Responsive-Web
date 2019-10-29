@@ -1,4 +1,4 @@
-body, a{ background-color: #FFFFF3; margin: 0; padding: 0;}
+body, a{ margin: 0; padding: 0; }
 
 ul, li, h3{ padding: 0; margin: 0;}
 
@@ -35,8 +35,20 @@ html{ overflow: hidden;}
 
 }
 
-.login_form a { box-sizing: border-box; display: block; border-radius: 35px 35px 35px 35px; background-color: transparent; 
+.login_form > ul  a { box-sizing: border-box; display: block; border-radius: 35px 35px 35px 35px; background-color: transparent; 
  }
 
-.id_form { border: solid 1px red; width: 50%; text-align: left; position: absolute; top: 30%; left: 30%;}
-.pwd_form { border: solid 1px red; width: 50%; text-align: left; }
+.id{margin: 30px 0 30px 0;}
+.id_form { border: solid 1px; width: 60%; height: 35px; margin: 0 0 0 30%; color: transparent; padding: 4px 0 4px 0; box-shadow: inset 4px 4px 10px -3px rgba(0,0,0,0.54)}
+.pwd_form { border: solid 1px; width: 60%; height: 35px; margin: 0 0 0 30%; color: transparent; padding: 4px 0 4px 0; box-shadow: inset 4px 4px 10px -3px rgba(0,0,0,0.54)}
+
+h3{ display: block; float: left; position: absolute; width: 30%; width: 30%; height: 35px; line-height: 35px; font-size: 2.8vw; font-family: 'Permanent Marker', cursive; }
+
+.login_botton{width: 80%; height: 50px; background-color: rgba(255,153,14,0.6); margin: 20px 0 0 10%; line-height: 50px; border-radius: 35px; box-shadow: 4px 4px 17px -3px rgba(0,0,0,0.54);  display: block; font-family: 'Cinzel', serif; font-weight: bold;
+}
+.add_user{width: 80%; height: 50px; background-color: rgba(255,153,14,0.6); margin: 10px 0 0 10%; line-height: 50px; border-radius: 35px; box-shadow: 4px 4px 17px -3px rgba(0,0,0,0.54); display: block; font-family: 'Cinzel', serif; font-weight: bold;
+}
+
+.login_botton:hover { box-shadow: inset 4px 4px 17px -3px rgba(0,0,0,0.54); }
+.add_user:hover { box-shadow: inset 4px 4px 17px -3px rgba(0,0,0,0.54); }
+
