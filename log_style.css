@@ -1,5 +1,9 @@
 body, a{ background-color: #FFFFF3; margin: 0; padding: 0;}
 
+ul, li, h3{ padding: 0; margin: 0;}
+
+ul{ list-style: none;}
+
 .log_portrait{
     
     
@@ -27,8 +31,12 @@ body, a{ background-color: #FFFFF3; margin: 0; padding: 0;}
 html{ overflow: hidden;}
 
 .login_form{
-     border: solid 5px grey; width: 50%; height: 30%; vertical-align: middle; text-align: center;position: absolute;top: 30%; left: 25%; background-color: white;
+      border-radius: 35px 35px 35px 35px; width: 50%; height: 30%; vertical-align: middle; text-align: center;position: absolute;top: 30%; left: 25%; background-color: rgba(1,1,1,0.3); box-shadow: 13px 14px 15px -9px rgba(0,0,0,0.52);
 
 }
 
-.login_form a { box-sizing: border-box; display: block}
+.login_form a { box-sizing: border-box; display: block; border-radius: 35px 35px 35px 35px; background-color: transparent; 
+ }
+
+.id_form { border: solid 1px red; width: 50%; text-align: left; position: absolute; top: 30%; left: 30%;}
+.pwd_form { border: solid 1px red; width: 50%; text-align: left; }
