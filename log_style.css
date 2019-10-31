@@ -31,24 +31,24 @@ ul{ list-style: none;}
 html{ overflow: hidden;}
 
 .login_form{
-      border-radius: 35px 35px 35px 35px; width: 50%; height: 30vh; vertical-align: middle; text-align: center;position: relative; top: 30%; left: 25%; background-color: rgba(1,1,1,0.3); box-shadow: 13px 14px 15px -9px rgba(0,0,0,0.52); margin-top: 25vh;;
-
+      border-radius: 35px 35px 35px 35px; width: 50%; height: 30vh; vertical-align: middle; text-align: center;position: relative; top: 30%; left: 25%; background-color: rgba(1,1,1,0.3); box-shadow: 13px 14px 15px -9px rgba(0,0,0,0.52); margin-top: 25vh; padding: 30px 0 0 0;
 }
 
 .login_form > ul  a { box-sizing: border-box; display: block; border-radius: 35px 35px 35px 35px; background-color: transparent; 
  }
 
-.id{margin: 30px 0 30px 0;}
-.id_form { border: solid 1px; width: 60%; height: 4vh; margin: 0 0 0 30%; color: transparent; padding: 4px 0 4px 0; box-shadow: inset 4px 4px 10px -3px rgba(0,0,0,0.54); }
-.pwd_form { border: solid 1px; width: 60%; height: 4vh; margin: 0 0 0 30%; color: transparent; padding: 4px 0 4px 0; box-shadow: inset 4px 4px 10px -3px rgba(0,0,0,0.54);}
+.id{margin: 0 0 2vh 0;}
+.id_form { border: solid 1px; width: 60%; height: 4vh; margin: 0 0 0 30%; color: transparent; padding: 4px 0 4px 0; box-shadow: inset 4px 4px 10px -3px rgba(0,0,0,0.54);  }
+.pwd_form { border: solid 1px; width: 60%; height: 4vh; margin: 0 0 0 30%; color: transparent; padding: 4px 0 4px 0; box-shadow: inset 4px 4px 10px -3px rgba(0,0,0,0.54); }
 
-h3{ display: block; float: left; position: absolute; width: 30%; height: 35px; line-height: 35px; font-size: 2.8vw; /* font-family: 'Permanent Marker', cursive; */ font-family: 'Cinzel', serif; }
+h3{ display: block; float: left; position: absolute; width: 30%; height: 35px; line-height: 4vh; font-size: 3.5vw; /* font-family: 'Permanent Marker', cursive; */ font-family: 'Cinzel', serif; }
 
-.login_botton{width: 80%; height: 50px; background-color: rgba(255,153,14,0.6); margin: 20px 0 0 10%; line-height: 50px; border-radius: 35px; box-shadow: 4px 4px 17px -3px rgba(0,0,0,0.54);  display: block; font-family: 'Cinzel', serif; font-weight: bold;
+.login_botton{width: 80%; height: 6vh; background-color: rgba(255,153,14,0.6); margin: 3vh 0 0 10%; line-height: 6vh; border-radius: 35px; box-shadow: 4px 4px 17px -3px rgba(0,0,0,0.54);  display: block; font-family: 'Cinzel', serif; font-weight: bold; 
 }
-.add_user{width: 80%; height: 50px; background-color: rgba(255,153,14,0.6); margin: 10px 0 0 10%; line-height: 50px; border-radius: 35px; box-shadow: 4px 4px 17px -3px rgba(0,0,0,0.54); display: block; font-family: 'Cinzel', serif; font-weight: bold;
+.add_user{width: 80%; height: 6vh; background-color: rgba(255,153,14,0.6); margin: 1vh 0 0 10%; line-height: 6vh; border-radius: 35px; box-shadow: 4px 4px 17px -3px rgba(0,0,0,0.54); display: block; font-family: 'Cinzel', serif; font-weight: bold; 
 }
 
 .login_botton:hover { box-shadow: inset 4px 4px 17px -3px rgba(0,0,0,0.54); }
 .add_user:hover { box-shadow: inset 4px 4px 17px -3px rgba(0,0,0,0.54); }
 
+.user_id_form { border: solid 1px; width: 60%; height: 4vh; margin: 0 0 0 30%; padding: 4px 0 4px 0; box-shadow: inset 4px 4px 10px -3px rgba(0,0,0,0.54);  }
