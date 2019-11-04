@@ -1,12 +1,12 @@
  <?php
   session_start();
   
-  $db = new mysqli("localhost","root","grace670*","mysql");
-  $db->set_charset("utf8");
+  $database = new mysqli("localhost","root","autoset","mysql");
+  $database->set_charset("utf8");
 
   function mq($sql){
-    global $db;
-    return $db->query($sql);
+    global $database;
+    return $database->query($sql);
   }
 
   ?>

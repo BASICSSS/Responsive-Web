@@ -1,10 +1,8 @@
-<?php
-    
+﻿<?php
+
+    include "database.php";
+
     /*$connect = mysql_connect("localhost","root","grace670*") or die("fail");  mysqli를 안썻을때*/
-    $mysqli = new mysqli("localhost","root","grace670*","mysql");
-    $mysqli->set_charset("utf8");
-
-
     $id=$_POST['id'];
     $pwd=$_POST['pwd'];
     $name=$_POST['name'];
@@ -12,14 +10,10 @@
 
     $date = date('Y-m-d H:i:s');
     
-    $sql = "insert into ADD_USER (id, pwd, name, email)";
-    $sql."values('$id', '$pwd', '$name', '$email')";
-
-    if($mysqli->query($sql)){
-      echo 'success inserting';
-     }else{
-      echo 'fail to insert sql';
-     }
+    $sql = mq("insert into member (id,pwd,name,email) values('$id','$pwd','$name','$email')");
 
 ?>
 
+<meta charset="utf-8" />
+<script type="text/javascript">alert('회원가입이 완료되었습니다.');</script>
+<meta http-equiv="refresh" content="0 url=/">
