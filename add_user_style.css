@@ -1,0 +1,39 @@
+p{ margin: 0; padding: 0;}
+
+.aus_portrait{
+    
+    
+    background-image: url(images/profile2.jpg);
+    background-size: cover;
+    /* 사지을 어색하지 않게 비율 16:9로 맞춤 */
+    background-position: center;
+    max-width: 100%;  
+    max-height: 100%;  
+    left: 0;  
+    right: 0;  
+    top: 0;  
+    bottom: 0;  
+    margin: auto;  
+    overflow: auto;  
+    position: absolute;
+    filter: blur(4px);
+    transform: scale(1.02);
+    z-index: -1;
+
+    /* 16:9 비율 (모바일기준)*/
+
+}
+
+html{ overflow: hidden;}
+
+.aus_form{
+    
+    border-radius: 35px 35px 35px 35px; width: 50%; height: 400px; vertical-align: middle; text-align: center;position: relative; top: 30%; left: 25%; background-color: rgba(1,1,1,0.3); box-shadow: 13px 14px 15px -9px rgba(0,0,0,0.52); margin-top: 25vh; padding: 30px 0 0 0;
+}
+
+p{ display: block; float: left}
+
+.id_tbox {display: block;}
+.pwd_tbox {display: block;}
+.name_tbox {display: block;}
+.email_tbox {display: block;}
