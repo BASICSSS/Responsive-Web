@@ -10,7 +10,7 @@
 
     $date = date('Y-m-d H:i:s');
     
-    $sql = mq("insert into member (id,pwd,name,email) values('$id','$pwd','$name','$email')");
+    $sql = mq("insert into add_user (id,pwd,name,email) values('$id','$pwd','$name','$email')");
 
 ?>
 
