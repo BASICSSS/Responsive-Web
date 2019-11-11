@@ -1,18 +1,18 @@
-$(function(){
+﻿$(function(){
     
     var id = $('.id_tbox');
     var pwd =$('.pwd_tbox');
     var name =$('.name_tbox');
     var email =$('.email_tbox');
-    var idcomment =
+    var idCheck = $('.idCheck');
     
-    memcheck_button.click(function(){
+    $(".memcheck_button").click(function(){
         console.log(id.val());
-        $ajax({
+        $.ajax({
             type: 'post',
             dataType: 'json',
-            url: 'memid_check.php',
-            data:{id:ic.val()},
+            url: "memid_check.php",
+            data:{id:id.val()},
             
             success: function(json){
                 if(json.res == 'good'){
@@ -26,13 +26,14 @@ $(function(){
                 }
             },
             
-            error:function(){
+            error:function(request,status,error){
+alert("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
                 console.log("failed");
             }
             
             
             
             
-        })
+        });
     });
 });

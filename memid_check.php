@@ -1,10 +1,13 @@
 <?php
 
+echo "<script> alert('test!!!'); </script>";
+
+
 include "db_c.php";
 
 $id = $_POST['id'];
 
-$sql = "select * from member where id = '{$id}'";
+$sql = "SELECT * FROM add_user WHERE id = '{$id}'";
 
 $res = $database -> query($sql);
 
