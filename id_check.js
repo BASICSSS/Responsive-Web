@@ -5,11 +5,17 @@
     var name =$('.name_tbox');
     var email =$('.email_tbox');
     var idCheck = $('.idCheck');
+    var placeholderval;
+
+    
     
     $(".memcheck_button").click(function(){
+        placeholderval = id.attr('placeholder');
         console.log(id.val());
+        console.log(placeholderval);
+      
 
-	$.post( "id_check.php", {id:id.val()}, function(data){if(data){ $('.id_tbox').parent().find("p.id").html(data);}});
+	$.post( "id_check.php", {id:id.val()}, function(data){if(data){ $('.id_tbox').attr("placeholder", data);}});
             
             
         });
