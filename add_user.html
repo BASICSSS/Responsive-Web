@@ -23,9 +23,12 @@
             <div class="aus_box">Sign Up</div>
         <form action="loginP.php" method="post" class="logform">
             <p class = "id">ID</p><input type="text" name="id" class="id_tbox" placeholder="sdsdsdsd">
+            <p class = "id_check_p1"></p>
+            <section class ="sec1">
             <p class = "pwd">PASSWORD</p><input type="text" name="pwd" class="pwd_tbox">
             <p class = "name">MAIL</p><input type="text" name="email" class="email_tbox">
             <p class = "email">NAME</p><input type="text" name="name" class="name_tbox">
+            </section>
             <input type="submit" class="sub_button" value="Submit">
             <input type="button" class="exit_button" value="Cancel">
             <input type="hidden" name="idCheck" class="idCheck">
@@ -39,3 +42,4 @@
 
 <script>
 $(document).ready(function() { $(".exit_button").on("click", function(){ location.href="login.html"});}); </script>
+
