@@ -4,43 +4,56 @@
 
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, target-densitydpi=medium-dpi">
-        <link rel="stylesheet" href="add_user_style.css">
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="js/default.js"></script>
-        <link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
-         <link href="https://fonts.googleapis.com/css?family=Cinzel|Permanent+Marker|Rajdhani&display=swap" rel="stylesheet">
-        <script type="text/javascript" src="id_check.js"></script>
 
-        
-    </head>
-    
-    
-    <body>
-        <div class="aus_portrait"></div>
-        <div class ="aus_form" align ="center">
-            <div class="aus_box">Sign Up</div>
-        <form action="loginP.php" method="post" class="logform">
-            <p class = "id">ID</p><input type="text" name="id" class="id_tbox" placeholder="sdsdsdsd">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, target-densitydpi=medium-dpi">
+    <link rel="stylesheet" href="add_user_style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/default.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel|Permanent+Marker|Rajdhani&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="id_check.js"></script>
+
+
+</head>
+
+
+<body>
+    <div class="aus_portrait"></div>
+    <div class="aus_form" align="center">
+        <div class="aus_box">Sign Up</div>
+        <form action="loginP.php" method="post" class="logform" autocomplete=off>
+            <p class="id">ID</p><input type="text" name="id" class="id_tbox" placeholder="sdsdsdsd">
             <p class="id_check_border"></p>
-            <p class = "id_check_p1"></p>
-            <section class ="sec1">
-            <p class = "pwd">PASSWORD</p><input type="text" name="pwd" class="pwd_tbox">
-            <p class = "name">MAIL</p><input type="text" name="email" class="email_tbox">
-            <p class = "email">NAME</p><input type="text" name="name" class="name_tbox">
+            <p class="id_check_p1"></p>
+            <section class="sec1">
+                <p class="pwd">PASSWORD</p><input type="text" name="pwd" class="pwd_tbox">
+                <p class="name">MAIL</p><input type="text" name="email" class="email_tbox">
+                <p class="email">NAME</p><input type="text" name="name" class="name_tbox">
             </section>
             <input type="submit" class="sub_button" value="Submit">
             <input type="button" class="exit_button" value="Cancel">
             <input type="hidden" name="idCheck" class="idCheck">
             <div class="memcheck_button">Check</div>
         </form>
-        </div>
-    
-    
-    </body>
+    </div>
+
+
+</body>
+
 </html>
 
 <script>
-$(document).ready(function() { $(".exit_button").on("click", function(){ location.href="login.html"});}); </script>
+    $(document).ready(function() {
+        $(".exit_button").on("click", function() {
+            location.href = "login.html"
+        });
+    });
 
+    $(function() {
+        $(".id_check_border").hide();
+        
+
+    });
+
+</script>
