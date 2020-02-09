@@ -86,10 +86,19 @@ p{ display: block; float: left; position: absolute; z-index: 1; font-size: 16px;
     
     
     .id_tbox {display: block; border-radius: 30px 30px 30px 30px; position: absolute; top: 14%; left: 10%; width: 80%; height: 8%; text-indent: 20px; }
+    .id_check_border{ border: solid 1px red; outline-style:none; display: block; border-radius: 30px 30px 30px 30px; position: absolute; top: 14%; left: 10%; width: 80%; height: 8%; z-index: -1; }
     .pwd_tbox {display: block; border-radius: 30px 30px 30px 30px; position: absolute;  top: 27%; left: 10%; width: 80%; height: 8%; text-indent: 20px;}
     .name_tbox {display: block; border-radius: 30px 30px 30px 30px;  position: absolute; top: 40%; left: 10%; width: 80%; height: 8%; text-indent: 20px;}
     .email_tbox {display: block; border-radius: 30px 30px 30px 30px;  position: absolute; top: 53%; left: 10%; width: 80%; height: 8%; text-indent: 20px; }
     .memcheck_button{position:absolute; left: 76%; top: 14.7%; width: auto; height: 30px; line-height: 30px; font-size: 1.5vw; font-weight: bold; cursor: pointer;}
+    .id_check_p1{ font-size: 12px; position: absolute; top: 23.5%; left: 12%;}
+    
+    .sec1.on .pwd{ top: 27%;}
+.sec1.on .name{ top: 40%;}
+.sec1.on .email{ top: 54%;}
+.sec1.on .pwd_tbox{ top: 31%;}
+.sec1.on .name_tbox{ top: 44%;}
+.sec1.on .email_tbox{ top: 57%;}
 
 
 

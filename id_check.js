@@ -9,14 +9,16 @@
     var formdata;
     var trigger = true;
     var count = 0;
+    var flag = false;
+    var timer;
     //var jsn;
     //var jsn2
 
     $(".memcheck_button").click(function () {
         placeholderval = id.attr('placeholder');
         formdata = $(".logform").serializeArray();
-        count = 0;//여러번 누리면 계속 누적되서 적용되는거 수정해야힘
-    
+        count = 0; //여러번 누리면 계속 누적되서 적용되는거 수정해야힘
+
 
 
         $.post("id_check.php",
@@ -36,12 +38,12 @@
                         $(".id_check_p1").show();
                         $(".sec1").addClass("on");
 
-                        setInterval(toggle, 500);
+                        start()
                         //clearInterval(toggle);
 
                         $(".id_check_p1").text("이미 존해하는 아이디 입니다.");
                         $(".id_tbox").val("");
-                        
+
                     } else if (data.idCheck === "0") {
                         $(".id_check_p1").show();
                         $(".sec1").addClass("on");
@@ -52,10 +54,10 @@
                         $(".sec1").removeClass("on");
                         $(".id_check_border").fadeIn(500);
                         $(".id_check_p1").hide();
-                        setInterval(toggle, 500);
+                        start()
                         //clearInterval(toggle);
                         $('.id_tbox').attr("placeholder", "아이디를 적어 주십시오");
-                       
+
                     }
 
 
@@ -64,27 +66,38 @@
 
 
     });
+    
+    function start()
+    {
 
-    function toggle() {
-        
-        if (count == 2) {
-
-            clearInterval(toggle);
-        } else {
-
-
-            if (trigger) {
-
-                $(".id_check_border").fadeOut(500);
-                trigger = false;
-                count++;
-            } else {
-
-                $(".id_check_border").fadeIn(500);
-                trigger = true;
-                
-            }
-
-        }
+    flag = false;
+    timer = setInterval(RealStop, 500);
     }
+
+    function RealStop() {
+        if (!flag) {
+
+                if (count == 2) {
+
+                    clearInterval(timer);
+                    flag = true;
+                } else {
+
+
+                    if (trigger) {
+
+                        $(".id_check_border").fadeOut(500);
+                        trigger = false;
+                        count++;
+                    } else {
+
+                        $(".id_check_border").fadeIn(500);
+                        trigger = true;
+
+                    }
+            }
+        }
+
+    }
+
 });
